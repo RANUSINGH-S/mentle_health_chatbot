@@ -49,6 +49,11 @@
             transition: all 0.3s ease;
         }
 
+        body.dark-theme {
+            background-color: #333333; /* Darker background for dark theme */
+            color: var(--text-dark);
+        }
+
         #app {
             background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
             max-width: 400px;
@@ -60,6 +65,12 @@
             box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
             position: relative;
             backdrop-filter: blur(5px); /* Adds a slight blur effect to the background */
+            transition: all 0.3s ease;
+        }
+
+        body.dark-theme #app {
+            background: rgba(42, 42, 42, 0.9); /* Darker semi-transparent background for dark theme */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
 
         header {
@@ -74,6 +85,12 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        body.dark-theme header {
+            background: #FF6347; /* Darker coral for header in dark theme */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         header span {
@@ -234,10 +251,15 @@
             display: flex;
             flex-direction: column;
             background-color: rgba(255, 255, 255, 0.7); /* More transparent background */
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="%23FFA07A" stroke-width="0.5" opacity="0.2"/></svg>');
             background-size: 40px 40px;
             background-position: center;
+        }
+
+        body.dark-theme #chat-box {
+            background-color: rgba(26, 26, 26, 0.8); /* Darker background for dark theme */
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="%23FF7F50" stroke-width="0.5" opacity="0.2"/></svg>');
         }
 
         .message {
@@ -261,6 +283,7 @@
             align-self: flex-end;
             border-bottom-right-radius: 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
 
         .bot {
@@ -270,6 +293,13 @@
             border-bottom-left-radius: 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-left: 3px solid #FF7F50; /* Coral accent */
+            transition: all 0.3s ease;
+        }
+
+        body.dark-theme .bot {
+            background: var(--message-bot); /* Dark background for bot messages in dark theme */
+            color: var(--message-bot-text);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         .typing-indicator {
@@ -318,6 +348,12 @@
             background-color: rgba(255, 255, 255, 0.9);
             position: relative;
             border-radius: 0 0 15px 15px;
+            transition: all 0.3s ease;
+        }
+
+        body.dark-theme form {
+            background-color: rgba(42, 42, 42, 0.9); /* Darker background for dark theme */
+            border-top: 1px solid #FF6347; /* Darker coral border for dark theme */
         }
 
         input[type="text"] {
@@ -332,6 +368,12 @@
             color: #333;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
+        }
+
+        body.dark-theme input[type="text"] {
+            background-color: #3A3A3A; /* Darker background for input in dark theme */
+            color: #e0e0e0; /* Lighter text for dark theme */
+            border-color: #FF6347; /* Darker coral border for dark theme */
         }
 
         input[type="text"]:focus {
@@ -389,6 +431,15 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
 
+        body.dark-theme #music-icon,
+        body.dark-theme #wellness-icon,
+        body.dark-theme #clear-chat-btn {
+            background: rgba(58, 58, 58, 0.9); /* Darker background for buttons in dark theme */
+            border-color: #FF6347; /* Darker coral border for dark theme */
+            color: #FF7F50; /* Keep the coral color for the icon */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
         #music-icon {
             right: 80px;
         }
@@ -409,6 +460,13 @@
             color: #FF6347; /* Tomato color on hover */
         }
 
+        body.dark-theme #music-icon:hover,
+        body.dark-theme #wellness-icon:hover,
+        body.dark-theme #clear-chat-btn:hover {
+            background-color: #4A4A4A; /* Slightly lighter dark background on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
         .tooltip {
             position: absolute;
             bottom: 100%;
@@ -424,6 +482,11 @@
             white-space: nowrap;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
             transform: translateY(5px);
+        }
+
+        body.dark-theme .tooltip {
+            background-color: #FF6347; /* Darker coral for tooltips in dark theme */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         #music-icon:hover .tooltip, #wellness-icon:hover .tooltip, #clear-chat-btn:hover .tooltip {
