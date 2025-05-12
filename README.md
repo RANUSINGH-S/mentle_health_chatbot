@@ -1,9 +1,14 @@
 # Mental Health Chatbot
 
-A supportive AI chatbot designed to provide mental health assistance and resources.
+A supportive AI-powered chatbot designed to provide mental health resources, song recommendations based on mood, and wellness center information.
 
-## Features
+## 🌟 Features
 
+- **Emotional Support**: Responds empathetically to both positive and negative emotions
+- **Music Therapy**: Recommends songs based on your mood with YouTube links
+- **Wellness Resources**: Suggests mental health centers and online resources with Google search links
+- **Fallback System**: Continues to provide helpful responses even when the AI service is unavailable
+- **Location-Aware**: Can recommend wellness centers based on location information
 - Simple, user-friendly chat interface
 - Dark/light theme toggle
 - Emergency mental health resources
@@ -22,8 +27,8 @@ A supportive AI chatbot designed to provide mental health assistance and resourc
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/mental_health_chatbot.git
-   cd mental_health_chatbot
+   git clone https://github.com/RANUSINGH-S/mentle_health_chatbot.git
+   cd mentle_health_chatbot
    ```
 
 2. Create and activate a virtual environment:
@@ -85,6 +90,9 @@ A supportive AI chatbot designed to provide mental health assistance and resourc
 - Requires an OpenAI API key
 - Provides more natural and contextually relevant responses
 - Falls back to rule-based responses if API is unavailable
+- **NEW**: Song recommendations based on mood with YouTube links
+- **NEW**: Wellness center recommendations with Google search links
+- **NEW**: Improved emotional support for both positive and negative feelings
 
 ### Llama (llama_api.py)
 - Integrates with HuggingFace's Inference API for Llama models
@@ -93,8 +101,29 @@ A supportive AI chatbot designed to provide mental health assistance and resourc
 - Provides free alternative to OpenAI
 - Falls back to rule-based responses if API is unavailable
 
+## 💬 New Features in Detail
+
+### Song Recommendations
+The chatbot can now recommend songs based on your mood:
+- Ask for song recommendations by typing "suggest a song" or "recommend music"
+- If you don't specify a mood, the chatbot will ask what kind of mood you're in
+- Specify a mood (happy, sad, calm, energetic, focused, relaxed) to get tailored recommendations
+- Each song recommendation includes a YouTube link for easy listening
+
+### Wellness Center Recommendations
+Get information about mental health centers and resources:
+- Ask for wellness centers by typing "suggest wellness centers" or "recommend therapists"
+- The chatbot provides information about mental health centers including:
+  - Name and description
+  - Location and contact information
+  - Website link
+  - Google search link for more information
+- Online resources for mental health support are also provided
+- Location-specific recommendations are available (e.g., "suggest wellness centers in Texas")
+
 ## Usage
 
+### Basic Interaction
 - Type your message in the input field and press Enter or click Send
 - Click the moon/sun icon to toggle between dark and light themes
 - Click the question mark button to access mental health resources
@@ -103,10 +132,75 @@ A supportive AI chatbot designed to provide mental health assistance and resourc
   - `Alt+R` to toggle resources panel
   - `Alt+T` to toggle theme
 
+### Example Interactions
+
+#### Emotional Support
+```
+User: "I am feeling sad today"
+Chatbot: "I'm sorry to hear you're feeling that way. Remember that it's okay to seek help when you need it. Would you like to talk more about what's bothering you?"
+
+User: "I am happy"
+Chatbot: "I'm so glad to hear you're feeling happy! Positive emotions are worth celebrating. What's bringing you joy today?"
+```
+
+#### Song Recommendations
+```
+User: "Suggest me a song"
+Chatbot: "What kind of mood are you in? I can suggest music for moods like happy, sad, calm, energetic, focused, or relaxed."
+
+User: "I'm feeling happy"
+Chatbot: "Here are some songs that might match your happy mood:
+
+1. "Happy" by Pharrell Williams
+   Listen here: https://www.youtube.com/results?search_query=pharrell+williams+happy
+2. "Can't Stop the Feeling" by Justin Timberlake
+   Listen here: https://www.youtube.com/results?search_query=justin+timberlake+cant+stop+the+feeling
+3. "Walking on Sunshine" by Katrina & The Waves
+   Listen here: https://www.youtube.com/results?search_query=katrina+and+the+waves+walking+on+sunshine
+
+I hope these songs help enhance your mood! Let me know if you'd like more recommendations."
+```
+
+#### Wellness Center Recommendations
+```
+User: "Suggest wellness centers"
+Chatbot: "Here are some wellness centers and mental health resources that might be helpful:
+
+1. Mayo Clinic
+   Comprehensive medical and mental health services
+   Location: Multiple locations across the US
+   Phone: 1-800-MAYO-CLINIC
+   Website: https://www.mayoclinic.org/mental-health
+   Google Search: https://www.google.com/search?q=mayo+clinic+mental+health+services
+
+[Additional centers and resources listed...]
+
+Remember that this is not an exhaustive list, and I recommend searching for 'mental health services near me' on Google for more localized options."
+```
+
 ## Important Note
 
 This chatbot is not a replacement for professional mental health services. If you or someone you know is in crisis, please contact a mental health professional or use one of the emergency resources listed in the application.
 
-## License
+## 🔗 Project Links
+
+- [GitHub Repository](https://github.com/RANUSINGH-S/mentle_health_chatbot)
+- [Direct Link to Code](https://github.com/RANUSINGH-S/mentle_health_chatbot/tree/main/mental_health_chatbot)
+
+## 📊 Future Enhancements
+
+- Integration with more mental health resources and APIs
+- User accounts and conversation history
+- Mobile application version
+- More personalized recommendations based on user preferences
+- Integration with emergency services for crisis situations
+
+## 📄 License
 
 MIT
+
+---
+
+Created with ❤️ for mental health support and awareness.
+
+For any questions or suggestions, please open an issue on GitHub.
